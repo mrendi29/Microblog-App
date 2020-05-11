@@ -9,3 +9,8 @@
 # two:
 #   name: MyString
 #   email: MyString
+
+endi:
+  name: Endi Caushi
+  email: mrendi29@gmail.com
+  password_digest: <%= User.digest('123456') %>
