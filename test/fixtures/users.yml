@@ -13,4 +13,9 @@
 endi:
   name: Endi Caushi
   email: mrendi29@gmail.com
-  password_digest: <%= User.digest('123456') %>
+  password_digest: <%= User.digest('1234567') %>
+
+michael:
+  name: Michael Example
+  email: michael@example.com
+  password_digest: <%= User.digest('password') %>
