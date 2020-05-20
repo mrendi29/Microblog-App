@@ -11,7 +11,8 @@
 User.create!(name: 'Endi Caushi',
              email: 'mrendi29@gmail.com',
              password: '1234567',
-             password_confirmation: '1234567')
+             password_confirmation: '1234567',
+             admin: true)
 
 # Generate a bunch of additional users.
 99.times do |n|
