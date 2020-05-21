@@ -14,6 +14,7 @@ endi:
   name: Endi Caushi
   email: mrendi29@gmail.com
   password_digest: <%= User.digest('1234567') %>
+  admin: true
 
 michael:
   name: Michael Example
@@ -29,6 +30,7 @@ lana:
   name: Lana Kane
   email: hands@example.gov
   password_digest: <%= User.digest('password') %>
+  admin: true
 
 malory:
   name: Malory Archer
