@@ -36,3 +36,4 @@ yarn-debug.log*
 .yarn-integrity
 # Ignore db test files.
 db/test.*
+config/initializers/sparkpost_rails.rb
