@@ -30,6 +30,9 @@ class PasswordResetsController < ApplicationController
       @user.forget
       reset_session
       log_in @user
+      # Forget reset digest after updating.
+      # (Avoids using back button to try to reset again.)
+      @user.update_attribute(:reset_digest, nil)
       flash[:success] = 'Password has been reset.'
       redirect_to @user
     else
