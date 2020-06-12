@@ -1,16 +1,12 @@
-<div class="center jumbotron">
-  <h1>Welcome to the Sample App</h1>
+<% if logged_in? %>
+  <div class="row">
+    <%= render 'static_pages/logged_in_home' %>
+    <div class="col-md-8">
+      <h3>Micropost Feed</h3>
+      <%= render 'shared/feed' %>
+    </div>
+  </div>
+<% else %>
+  <%= render 'static_pages/logged_out_home' %>
+<% end %>
 
-  <h2>
-    This is the home page for the
-    <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a>
-    sample application.
-  </h2>
-
-  <%= link_to 'Sign Up now!', signup_path, class: "btn btn-lg btn-primary" %>
-</div>
-
-<%= link_to image_tag("rails.svg", alt: "Rails logo", width: "200"), "https://rubyonrails.org" %>
-<!--
-<%= link_to image_tag("kitten.jpg", alt: "Cat image") %>
--->
