@@ -13,7 +13,7 @@
 endi:
   name: Endi Caushi
   email: mrendi29@gmail.com
-  password_digest: <%= User.digest('1234567') %>
+  password_digest: <%= User.digest('password') %>
   admin: true
   activated: true
   activated_at: <%= Time.zone.now %>
@@ -54,7 +54,7 @@ malory:
   activated: true
   activated_at: <%= Time.zone.now %>
 
-<% 30.times do |n| %>
+<% 50.times do |n| %>
 user_<%= n %>:
   name:  <%= "User #{n}" %>
   email: <%= "user-#{n}@example.com" %>
