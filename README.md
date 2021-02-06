@@ -1,6 +1,6 @@
 # Ruby on Rails Microblog.
 
-This is a sample Microblog application using RubyOnRails. You can also see the app at: https://young-tor-93348.herokuapp.com/
+This is a sample Microblog application using RubyOnRails. You can also see the app at: https://endis-microblog.herokuapp.com/  
 
 ### To view the app locally:
 
